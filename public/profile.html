@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль | Система аутентификации</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/profile.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Личный кабинет</h1>
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+        <button id="logout-btn" class="btn-logout">Выйти</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="profile-container">
+        <div class="profile-info">
+          <h2>Информация о пользователе</h2>
+          <div id="user-info">
+            <p>Загрузка информации...</p>
+          </div>
+        </div>
+
+        <div class="data-container">
+          <h2>Данные с сервера</h2>
+          <div class="data-controls">
+            <button id="refresh-data" class="btn">Обновить данные</button>
+            <p id="cache-status"></p>
+          </div>
+          <div id="data-content">
+            <p>Нажмите "Обновить данные" для загрузки информации</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Система аутентификации</p>
+    </footer>
+  </div>
+</body>
+</html> 
